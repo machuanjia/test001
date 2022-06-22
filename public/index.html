@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAAt1BMVEUAAAAjScEjScILCwsLCwoKDAoLCwoiSsAKDgouXdEKCwkLCwoXFxc+Pj4KCwkPDw8MDgwKCwkLDAoKCwoKDgoMDAwlJSUKDAkLCwkLCwkKDAoMDAkLDAoKCwkKCwkLCwkLDAsLDAsNDQwREgwLDAkLDAoKCwoLCwoKDAoKDAoMDAwNDgkSEhIKCwkKDAoLDAkKDAoKDAoLDAsODg4KDAkLDApAYN8jSsEiScAkSsIkSsMKCwkiScB8rRyHAAAAO3RSTlMAvn1Z55Wc50cL+4QLBPMgFffvsi8nBsK6a2RP6eHIinRdORvY086hf3lANA7draWYkkURqo4IratxXaCshe8AAAKKSURBVGje7djnbtswFIZhpnIcV8Nb3nvvOEnT9eX+r6tIUaDmsSTK5GGQH3x/GpAf2CCpIwmpuzerPVxQDr7MwQ52sIMd7OCLfn+x2i/hcrlcH1VQvK4p1E3JNa83uk0kdBLq7iFXuBF+TIL9inV47iOpJ+vwGImVXyzDhzqS21qGJ0ipEFmFoyHSmlqFPaS2sgqPkN6zRXiHjDoW4Qayiq3BsZ8JF63BZ3pqQKpWtQRXCdTuQS6wBG8g54XkGBuEVuBWgVzYujq4u1bghD+2Qlbbwgq8hJQ/T9hffQtwCXLf3j98hlzbAtyB3E68t4Dcnh2mo9ZS/K1L/wd2eJ28gA9lOnwxw3TUqocpX/fKDI/ThruYHqMHVpieUYhTF92EFe6m33v7kBtGjHB0zDgohnT4YoS9rF81ocMXIzzKGqKrNXq0sMEzZN7xi5BrsMEnyK0Vz48xE1zxFQdymw5fTDC9YqRae7UqC/xSVu2XqAC5DQu8hdygpZzGBi0GmI5aGCfMn3QV9Bjg3vVbB/X7iQUDvMyzS2cg9Y3hUr6HwhUdvoxheterlxI7g7Q3hJvQ7NEQXuvC/twInteg29gIDqBd/WAAh3XoNzGAuzBoGOnDR5jkacN9GDXShkcwa6cJz2BYQxM+wbRYC674xvBZC34CqeMp6uJq+FLD6lELM6GqDdJGA96CtNJ4qzxoKWHF5EjnKI2LcsJTkMqhUBeAtLgZXoJ0r0KTd0LpRjgEran3RjswhdsiVyV22BP5OvLAdF+omzDDgchZtcYK+xWRtzUr3BC5m5nBkScVi/x5Uv934d6T6wuXy+Vi7fud9X4kwl/frPfgYAf/y8EOdrCDPzv8Affjn+IT9AcNOMUQRGWTIAAAAABJRU5ErkJggg==" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="来也科技机器学习平台"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+      <!--
+        Notice the use of %PUBLIC_URL% in the tags above.
+        It will be replaced with the URL of the `public` folder during the build.
+        Only files inside the `public` folder can be referenced from the HTML.
+
+        Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+        work correctly both with client-side routing and a non-root public URL.
+        Learn how to configure a non-root public URL by running `npm run build`.
+      -->
+      <title>MLPLATFORM</title>
+      <style>
+          #global-loading {
+              display: none;
+              z-index: 2;
+          }
+      </style>
+  </head>
+  <body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="global-loading" class="opacity-white-80 flex flex-row justify-center items-center h-full w-full absolute">
+      <div class="max-w-xs m-auto flex flex-col justify-center items-center">
+          <div class="w-16 h-16 border-4 border-primary border-dashed rounded-full animate-spin"></div>
+          <div class="text-weak text-lg mt-4">Loading...</div>
+      </div>
+  </div>
+  <div id="root"></div>
+  <div id="otterData" className="app-wrap hidden"></div>
+  <div id="otterExperiment" className="app-wrap hidden"></div>
+  <div id="otterModel" className="app-wrap hidden"></div>
+  <div id="otterTest" className="app-wrap hidden"></div>
+  <div id="otterPublish" className="app-wrap hidden"></div>
+  <!--
+    This HTML file is a template.
+    If you open it directly in the browser, you will see an empty page.
+
+    You can add webfonts, meta tags, or analytics to this file.
+    The build step will place the bundled scripts into the <body> tag.
+
+    To begin the development, run `npm start` or `yarn start`.
+    To create a production bundle, use `npm run build` or `yarn build`.
+  -->
+  </body>
+</html>
